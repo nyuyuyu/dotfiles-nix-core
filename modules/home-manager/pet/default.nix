@@ -70,22 +70,34 @@
       {
         description = "show a table schema in postgres shell";
         command = "\\d <TABLE_NAME>";
-        tag = [ "postgres" "psql" ];
+        tag = [
+          "postgres"
+          "psql"
+        ];
       }
       {
         description = "show access privileges of table in postgres shell";
         command = "\\z info";
-        tag = [ "postgres" "psql" ];
+        tag = [
+          "postgres"
+          "psql"
+        ];
       }
       {
         description = "show all databases in postgres shell";
         command = "\\l";
-        tag = [ "postgres" "psql" ];
+        tag = [
+          "postgres"
+          "psql"
+        ];
       }
       {
         description = "show all tables in postgres shell";
         command = "\\dt";
-        tag = [ "postgres" "psql" ];
+        tag = [
+          "postgres"
+          "psql"
+        ];
       }
       {
         description = "show current unix time";
@@ -94,7 +106,10 @@
       {
         description = "switch database in postgres shell";
         command = "\\c <DATABASE_NAME>";
-        tag = [ "postgres" "psql" ];
+        tag = [
+          "postgres"
+          "psql"
+        ];
       }
       {
         description = "unset kubectl configuration file";
