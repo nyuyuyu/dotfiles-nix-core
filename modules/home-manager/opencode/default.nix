@@ -1,10 +1,15 @@
-{ ... }:
+{ 
+  pkgsUnstable,
+  ...
+}:
 
 {
-  config.home.shellAliases = {
-    opencode = "nix shell nixpkgs#nodejs -c npx -y @opencode/cli@latest";
-  };
+  config = {
+    home.packages = [
+      pkgsUnstable.opencode
+    ];
 
-  config.xdg.configFile."opencode/opencode.jsonc".source = ./opencode.jsonc;
-  config.xdg.configFile."opencode/cli.json".source = ./cli.json;
+    xdg.configFile."opencode/opencode.jsonc".source = ./opencode.jsonc;
+    xdg.configFile."opencode/cli.json".source = ./cli.json;
+  };
 }
