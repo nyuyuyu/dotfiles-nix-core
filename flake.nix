@@ -19,11 +19,6 @@
       url = "github:nolabs-ai/nono?ref=v0.79.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    pi = {
-      url = "github:earendil-works/pi/v1.1.0";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =
@@ -33,7 +28,6 @@
       nixpkgs-unstable,
       home-manager,
       nix4vscode,
-      pi,
       ...
     }:
     let
