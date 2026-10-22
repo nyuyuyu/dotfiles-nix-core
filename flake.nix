@@ -14,11 +14,6 @@
       url = "github:nix-community/nix4vscode";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    nono = {
-      url = "github:nolabs-ai/nono?ref=v0.79.0";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =
