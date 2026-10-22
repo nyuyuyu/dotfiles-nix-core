@@ -1,21 +1,23 @@
 { ... }:
 
 {
-  config.home = {
-    file = {
-      ".vimrc" = {
-        source = ./.vimrc;
+  config = {
+    home = {
+      file = {
+        ".vimrc" = {
+          source = ./.vimrc;
+        };
+      };
+
+      shellAliases = {
+        vi = "vim";
       };
     };
 
-    shellAliases = {
-      vi = "vim";
+    programs.vim = {
+      enable = true;
+
+      defaultEditor = true;
     };
-  };
-
-  config.programs.vim = {
-    enable = true;
-
-    defaultEditor = true;
   };
 }
