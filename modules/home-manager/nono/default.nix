@@ -1,13 +1,12 @@
 {
   config,
   lib,
-  inputs,
-  pkgs,
+  pkgsUnstable,
   ...
 }:
 
 {
   config.home.packages = [
-    inputs.nono.packages.${pkgs.stdenv.hostPlatform.system}.default
+    pkgsUnstable.nono
   ];
 }
