@@ -1,4 +1,8 @@
-{ lib, pkgs, ... }:
+{
+  lib,
+  pkgs,
+  ...
+}:
 
 let
   ghqDirs = [
@@ -8,24 +12,26 @@ let
 in
 
 {
-  config.home = {
-    activation.createGhqRoot = lib.hm.dag.entryAfter [ "writeBoundary" ] (
-      lib.concatMapStrings (dir: ''
-        $DRY_RUN_CMD mkdir -p ${dir}
-      '') ghqDirs
-    );
+  config = {
+    home = {
+      activation.createGhqRoot = lib.hm.dag.entryAfter [ "writeBoundary" ] (
+        lib.concatMapStrings (dir: ''
+          $DRY_RUN_CMD mkdir -p ${dir}
+        '') ghqDirs
+      );
 
-    packages = [
-      pkgs.ghq
-    ];
-  };
+      packages = [
+        pkgs.ghq
+      ];
+    };
 
-  config.programs.git = {
-    enable = true;
+    programs.git = {
+      enable = true;
 
-    settings = {
-      ghq = {
-        root = ghqDirs;
+      settings = {
+        ghq = {
+          root = ghqDirs;
+        };
       };
     };
   };

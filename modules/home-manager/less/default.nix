@@ -1,11 +1,13 @@
 { ... }:
 
 {
-  config.home.sessionVariables = {
-    PAGER = "less";
-  };
+  config = {
+    home.sessionVariables = {
+      PAGER = "less";
+    };
 
-  config.programs.less = {
-    enable = true;
+    programs.less = {
+      enable = true;
+    };
   };
 }
