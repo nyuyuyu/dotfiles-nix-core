@@ -54,6 +54,38 @@
         "url": "https://flakehub.com/f/NixOS/nixpkgs/0"
       }
     },
+    "nixpkgs-darwin-legacy": {
+      "locked": {
+        "lastModified": 1788334797,
+        "narHash": "sha256-nskSa8kDimM7F0VFSP8IdoSNo4G0vKzOtxwvOFpoGDI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "c19db427a1fdfc7591c0b0baeb4665dcef2c61da",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-26.05-darwin",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-darwin-x64": {
+      "locked": {
+        "lastModified": 1788334797,
+        "narHash": "sha256-nskSa8kDimM7F0VFSP8IdoSNo4G0vKzOtxwvOFpoGDI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "c19db427a1fdfc7591c0b0baeb4665dcef2c61da",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-26.05-darwin",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs-unstable": {
       "locked": {
         "lastModified": 1794042290,
@@ -68,12 +100,58 @@
         "url": "https://flakehub.com/f/NixOS/nixpkgs/0.1"
       }
     },
+    "nono": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "nixpkgs-darwin-legacy": "nixpkgs-darwin-legacy"
+      },
+      "locked": {
+        "lastModified": 1793293260,
+        "narHash": "sha256-0difjQr5qWP82ydktjBvWIvwqt4ndNuxj3WkWQj1Y+k=",
+        "owner": "nolabs-ai",
+        "repo": "nono",
+        "rev": "b2d859deeb7a65f9ca5b334eb8726637ba76c866",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nolabs-ai",
+        "ref": "v0.81.0",
+        "repo": "nono",
+        "type": "github"
+      }
+    },
+    "pi": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "nixpkgs-darwin-x64": "nixpkgs-darwin-x64"
+      },
+      "locked": {
+        "lastModified": 1794265657,
+        "narHash": "sha256-G3SRvVaxOlgMY8bxl+SLAlF2+cMFQ2dBOuPo+NPKn/I=",
+        "owner": "earendil-works",
+        "repo": "pi",
+        "rev": "dd30101cfc5b0609411dd80b6f93adbc14db14cf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "earendil-works",
+        "ref": "v1.5.1",
+        "repo": "pi",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "nix4vscode": "nix4vscode",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-unstable": "nixpkgs-unstable"
+        "nixpkgs-unstable": "nixpkgs-unstable",
+        "nono": "nono",
+        "pi": "pi"
       }
     },
     "systems": {

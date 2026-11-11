@@ -14,6 +14,16 @@
       url = "github:nix-community/nix4vscode";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nono = {
+      url = "github:nolabs-ai/nono?ref=v0.81.0";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    pi = {
+      url = "github:earendil-works/pi/v1.5.1";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -23,6 +33,8 @@
       nixpkgs-unstable,
       home-manager,
       nix4vscode,
+      nono,
+      pi,
       ...
     }:
     let

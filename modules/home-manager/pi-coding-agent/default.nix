@@ -1,14 +1,15 @@
 {
   config,
   lib,
-  pkgsUnstable,
+  inputs,
+  pkgs,
   ...
 }:
 
 {
   config = {
     home.packages = [
-      pkgsUnstable.pi-coding-agent
+      inputs.pi.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
 
     # pi with tmux
