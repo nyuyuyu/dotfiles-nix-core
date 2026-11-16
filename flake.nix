@@ -16,7 +16,7 @@
     };
 
     nono = {
-      url = "github:nolabs-ai/nono?ref=v0.81.0";
+      url = "github:nolabs-ai/nono?ref=v0.82.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

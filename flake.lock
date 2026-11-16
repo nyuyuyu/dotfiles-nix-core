@@ -108,16 +108,16 @@
         "nixpkgs-darwin-legacy": "nixpkgs-darwin-legacy"
       },
       "locked": {
-        "lastModified": 1793293260,
-        "narHash": "sha256-0difjQr5qWP82ydktjBvWIvwqt4ndNuxj3WkWQj1Y+k=",
+        "lastModified": 1794577975,
+        "narHash": "sha256-ilU6U1CPLda1vLNqX48jek31Ql53s7CHEbuVcmD9Rd4=",
         "owner": "nolabs-ai",
         "repo": "nono",
-        "rev": "b2d859deeb7a65f9ca5b334eb8726637ba76c866",
+        "rev": "f1e0a7ac2cf44709a2982c07b5ca1273e0d5a9ba",
         "type": "github"
       },
       "original": {
         "owner": "nolabs-ai",
-        "ref": "v0.81.0",
+        "ref": "v0.82.0",
         "repo": "nono",
         "type": "github"
       }
