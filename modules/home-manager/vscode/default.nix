@@ -13,6 +13,7 @@
     ./vscode-lang-go.nix
     ./vscode-lang-javascript.nix
     ./vscode-lang-make.nix
+    ./vscode-lang-nix.nix
     ./vscode-lang-python.nix
     ./vscode-lang-rust.nix
     ./vscode-lang-typescript.nix
