@@ -13,6 +13,12 @@
   config.programs.vscode = {
     enable = true;
 
+    package = pkgs.vscode.overrideAttrs (old: {
+      postInstall = (old.postInstall or "") + ''
+        rm -rf "$out/Applications/Visual Studio Code.app/Contents/Resources/app/node-compile-cache"
+      '';
+    });
+
     profiles = {
       default = {
         extensions = pkgs.nix4vscode.forVscode [
