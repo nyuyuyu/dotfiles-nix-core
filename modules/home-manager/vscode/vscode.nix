@@ -52,6 +52,8 @@
           "terminal.integrated.initialHint" = false;
           "terminal.integrated.stickyScroll.enabled" = false;
 
+          "update.mode" = "none";
+
           "workbench.editor.enablePreview" = false;
           "workbench.fontAliasing" = "auto";
           "workbench.layoutControl.enabled" = false;
