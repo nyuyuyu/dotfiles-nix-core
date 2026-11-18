@@ -4,7 +4,7 @@
 }:
 
 {
-  condig = {
+  config = {
     home = {
       # Dependencies
       packages = [
