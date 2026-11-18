@@ -54,6 +54,7 @@
           "terminal.integrated.initialHint" = false;
           "terminal.integrated.stickyScroll.enabled" = false;
 
+          # Disable VS Code's built-in updates, as updating under Nix can break deployments.
           "update.mode" = "none";
 
           "workbench.editor.enablePreview" = false;
