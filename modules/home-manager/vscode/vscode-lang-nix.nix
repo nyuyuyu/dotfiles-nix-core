@@ -22,12 +22,14 @@
           userSettings = {
             "nix.enableLanguageServer" = true;
             "nix.serverPath" = "nil";
-            "nil" = {
-              "formatting" = {
-                "command" = [
-                  "nix"
-                  "fmt"
-                ];
+            "nix.serverSettings" = {
+              "nil" = {
+                "formatting" = {
+                  "command" = [
+                    "nix"
+                    "fmt"
+                  ];
+                };
               };
             };
           };
