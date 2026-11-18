@@ -15,7 +15,7 @@
     programs.vscode = {
       profiles = {
         default = {
-          extensions = with pkgs.vscode-extensions; [
+          extensions = pkgs.nix4vscode.forVscode [
             "jnoortheen.nix-ide"
           ];
 
