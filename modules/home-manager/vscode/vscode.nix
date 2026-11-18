@@ -9,6 +9,7 @@
   imports = [
     ../fish
     ../udev-gothic
+    ../udev-gothic-nf
   ];
 
   config.programs.vscode = {
@@ -51,6 +52,8 @@
 
           "terminal.integrated.defaultProfile.linux" = "fish";
           "terminal.integrated.defaultProfile.osx" = "fish";
+          "terminal.integrated.fontFamily" = "'UDEV Gothic NF', 'UDEV Gothic LG', 'UDEV Gothic', Menlo, Monaco, 'Courier New', monospace";
+          "terminal.integrated.fontSize" = 12;
           "terminal.integrated.initialHint" = false;
           "terminal.integrated.stickyScroll.enabled" = false;
 
