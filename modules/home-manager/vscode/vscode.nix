@@ -1,5 +1,6 @@
 {
   pkgs,
+  pkgsUnstable,
   ...
 }:
 
@@ -12,6 +13,7 @@
 
   config.programs.vscode = {
     enable = true;
+    package = pkgsUnstable.vscode;
 
     profiles = {
       default = {
